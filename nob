@@ -1,0 +1,5 @@
+set -ex
+mkdir -p build
+cc src/main.c -o build/main && build/main 63 > src/pp_print.h
+
+cc src/example.c -o build/example && build/example
